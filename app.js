@@ -3,6 +3,7 @@ const apiCallFromNode = require('./NodeJsCall')
 const http= require('http')
 const schedule=require('node-schedule')
 
+const port= process.env.PORT || 3000;
 
 http.createServer((req, res) => {
     if(req.url === "/request"){
@@ -22,8 +23,8 @@ http.createServer((req, res) => {
         });
     }
     // res.end();
-}).listen(4000);
+}).listen(port);
 
-console.log("service running on 4000 port....");
+console.log("service running on port"+ port);
 
 
