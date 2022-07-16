@@ -2,7 +2,10 @@
   "name": "api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
